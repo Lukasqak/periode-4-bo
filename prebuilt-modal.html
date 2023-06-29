@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drift FB</title>
+    <script src="js/prebuilt-filters.js" defer></script>
+    <script src="js/atcpopup.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4b80d31110.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <article class="circle">
+            <a href="index.html" class="header-circle-text">DFB</a>
+        </article>
+        <section class="searchBar">
+            <input id="js--searchBar" type="text" placeholder="Zoeken naar..." class="searchBar__input">
+            <i class="fa-solid fa-magnifying-glass searchBar__glass"></i>
+        </section>
+        <a href="cart.html" id="js--checkoutButton" class="shoppingCart">🛒</a>
+    </header>
+
+    <ul class="navList">
+        <li id="js--navListPrebuilts" class="navListItem"><a href="prebuilt-modal.html">Prebuilts</a></li>
+        <li id="js--navListDecks" class="navListItem"><a href="decks-modal.html">Decks</a></li>
+        <li id="js--navListTrucks" class="navListItem"><a href="trucks-modal.html">Trucks</a></li>
+        <li id="js--navListWheels" class="navListItem"><a href="wheels-modal.html">Wheels</a></li>
+    </ul>
+    
+    <article id="atcpopup">✔ Product toegevoegd aan winkelmandje</article>
+    
+    <section id="js--prebuiltModal" class="modal">
+        <h2 class="modal--title">Prebuilt Fingerboards</h2>
+
+        <ul class="filters">
+            <li class="filter prebuilt-filter">
+                <button id="js--prebuilt-hout" class="filter-button">Hout</button>
+            </li>
+            <li class="filter prebuilt-filter">
+                <button id="js--prebuilt-rood" class="filter-button">Rood</button>
+            </li>
+            <li class="filter prebuilt-filter">
+                <button id="js--prebuilt-wit" class="filter-button">Wit</button>
+            </li>
+            <li class="filter">
+                <button id="js--prebuilt-100" class="filter-button">Onder €100</button>
+            </li>
+            <li class="filter">
+                <button id="js--prebuilt-120" class="filter-button">Onder €120</button>
+            </li>
+            <li class="filter">
+                <button id="js--prebuilt-150" class="filter-button">Onder €150</button>
+            </li>
+        </ul>
+        </ul>
+
+        <section class="modal--products">
+            <article id="js--prebuilt1" data-title="Blackriver Houten Prebuilt" class="modal--product">
+                <figure class="modal--product--figure">
+                    <img src="img/prebuilt1.webp" alt="" class="modal--product--img">
+                </figure>
+                <h3 class="modal--product--title">Blackriver Houten Prebuilt</h3>
+                <p class="modal--product--desc">Dit is een redelijk standaard Blackriver fingerboard.
+                    Het deck is van hout gemaakt, de trucks van ijzer en de wielen van plastic. Omdat deze setup zo
+                    standaard is,
+                    is deze perfect voor bijna elke modificatie terwijl het er nog steeds goed uitziet.</p>
+                <section class="modal--purchase-info">
+                    <p class="modal--price">€99</p>
+                    <button data-product="Houten Prebuilt" class="modal--add-to-cart atcbutton">Toevoegen aan winkelmandje</button>
+                    <a href="prebuilt-info-modal-1.html" class="modal--more-info">Meer informatie</a>
+                </section>
+            </article>
+
+            <article id="js--prebuilt2" data-title="Graffiti Prebuilt" class="modal--product">
+                <figure class="modal--product--figure">
+                    <img src="img/prebuilt2.webp" alt="" class="modal--product--img">
+                </figure>
+                <h3 class="modal--product--title">Graffiti Prebuilt</h3>
+                <p class="modal--product--desc">Dit board heeft een mooie graffiti aestetic en gaat heel goed met witte of rode wielen.
+                    Het deck is gemaakt uit hout, de trucks van ijzer en rubber en de wielen van plastic. 
+                </p>
+                <section class="modal--purchase-info">
+                    <p class="modal--price">€70</p>
+                    <button data-product="Graffiti Prebuilt" class="modal--add-to-cart atcbutton">Toevoegen aan winkelmandje</button>
+                    <a href="prebuilt-info-modal-2.html" class="modal--more-info">Meer informatie</a>
+                </section>
+            </article>
+
+            <article id="js--prebuilt3" data-title="Gele Koffie Prebuilt" class="modal--product">
+                <figure class="modal--product--figure">
+                    <img src="img/prebuilt3.webp" alt="" class="modal--product--img">
+                </figure>
+                <h3 class="modal--product--title">Gele Koffie Prebuilt</h3>
+                <p class="modal--product--desc">Deze prebuilt is goed voor mensen die een chille, Lo-Fi aesthetic zoeken voor hun collectie. 
+                    Het deck is gemaakt van hout, de trucks van ijzer en een beetje rubber en de wielen van urethaan. 
+                    De graphic is op het deck gezet door middel van heat transfer, dit betekent dat de graphic en het deck zal slijten net als een echt skateboard.
+                </p>
+                <section class="modal--purchase-info">
+                    <p class="modal--price">€130</p>
+                    <button data-product="Gele Koffie Prebuilt" class="modal--add-to-cart atcbutton">Toevoegen aan winkelmandje</button>
+                    <a href="prebuilt-info-modal-3.html" class="modal--more-info">Meer informatie</a>
+                </section>
+            </article>
+
+            <article id="js--prebuilt4" data-title="Witte Prebuilt" class="modal--product">
+                <figure class="modal--product--figure">
+                    <img src="img/prebuilt4.webp" alt="" class="modal--product--img">
+                </figure>
+                <h3 class="modal--product--title">Witte Prebuilt</h3>
+                <p class="modal--product--desc">Net als de Blackriver prebuilt is deze setup heel simpel. 
+                    Het is niet een heel complex design en dit betekent dus dat het er altijd goed uit blijft zien, ondanks eventuele modificaties. 
+                    Het deck is van hout gemaakt, de trucks van ijzer en de wielen van plastic.</p>
+                <section class="modal--purchase-info">
+                    <p class="modal--price">€105</p>
+                    <button data-product="witte prebuilt" class="modal--add-to-cart atcbutton">Toevoegen aan winkelmandje</button>
+                    <a href="prebuilt-info-modal-4.html" class="modal--more-info">Meer informatie</a>
+                </section>
+            </article>
+        </section>
+    </section>
+    <footer>
+        <p class="footer--text">
+            Contact:<br>
+            Email: DriftFB@gmail.com<br>
+            Telefoon: +31 (6) 817 872 14<br>
+        </p>
+    </footer>
+</body>
+</html>
